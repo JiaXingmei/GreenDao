@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_bili"
+        android:text="圆角" />
+
+    <Button
+        android:id="@+id/btn_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_bili"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/btn_border"
+        android:text="圆形"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_bili"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_jianjin"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="109dp"
+        android:layout_marginRight="109dp"
+        android:text="比例1.2"
+        tools:layout_editor_absoluteX="198dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_jianjin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:text="渐进式"
+        tools:layout_editor_absoluteX="293dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/btn_cipanhuancun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_bili"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="64dp"
+        android:text="磁盘缓存" />
+
+    <Button
+        android:id="@+id/btn_GIF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_bili"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="63dp"
+        android:text="加载动图" />
+
+    <Button
+        android:id="@+id/btn_listener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_bili"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginRight="113dp"
+        android:text="加载监听" />
+
+    <Button
+        android:id="@+id/btn_OKHTTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_bili"
+        android:layout_marginStart="-109dp"
+        android:layout_marginTop="60dp"
+        android:layout_toEndOf="@+id/btn_bili"
+        android:text="配置OKHTTP" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/icon_rounde"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/btn_cipanhuancun"
+        fresco:placeholderImage="@mipmap/ic_launcher"
+        />
+
+</RelativeLayout>
